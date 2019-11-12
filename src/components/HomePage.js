@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import BoxMessage from './BoxMessage/BoxMessage'
 import Title from './Title'
 import VotingBoxes from './VotingBoxes/VotingBoxes'
+import Postulate from './Postulate/Postulate'
 
 const HomePage = (props) => {
   const [entries, setEntries] = useState([])
@@ -36,6 +37,7 @@ const HomePage = (props) => {
       <BoxMessage />
       <Title level={2}>Votes</Title>
       <VotingBoxes entries={entries} />
+      <Postulate />
     </div>
   );
 }

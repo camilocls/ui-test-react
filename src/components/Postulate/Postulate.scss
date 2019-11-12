@@ -1,0 +1,49 @@
+.postulate {
+  background-color: red;
+  padding: 14px 30px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(white, 0.85);
+  }
+
+  &__text, &__link {
+    position: relative;
+  }
+
+  &__text {
+    font-size: 30px;
+    font-weight: var(--fw-light);
+  }
+
+  &__link {
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    padding: 14px 36px;
+    font-weight: var(--fw-regular);
+    border: 3px solid currentColor;
+    line-height: 1;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background-color ease 0.2s;
+
+    &:hover {
+      background-color: rgba(black, 0.2);
+    }
+  }
+}
