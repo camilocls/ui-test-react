@@ -35,7 +35,7 @@ const HomePage = (props) => {
 
   return (
     <div className="page">
-      <Header />
+      <Header floating />
       <Hero />
       <BoxMessage />
       <Title level={2}>Votes</Title>

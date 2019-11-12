@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './Header.css';
+import { Link } from 'react-router-dom'
+import SearchBar from '../SearchBar/SearchBar'
+import './Header.scss';
 
 const Header = (props) => {
+  const { floating } = props
   return (
-    <div className="container">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Epaaaa dsfds fdsfsdfds dfdsfdsf ds
-        </a>
-      </header>
-    </div>
+    <header className={`header${floating ? ' header--floating' : ''}`}>
+      <div className="container header__container">
+        <div className="header__logo-text">Rule of Thumb.</div>
+        <div className="header__right">
+          <div className="header__menu">
+            <Link to="/past-trials" className="header__menu-item">Past Trials</Link>
+            <Link to="/how-it-works" className="header__menu-item">How It Works</Link>
+            <Link to="/login" className="header__menu-item">Log In / Sign Up</Link>
+          </div>
+          <SearchBar className="header__search" />
+        </div>
+      </div>
+    </header>
   );
 }
 
