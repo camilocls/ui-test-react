@@ -4,6 +4,8 @@ import BoxMessage from './BoxMessage/BoxMessage'
 import Title from './Title'
 import VotingBoxes from './VotingBoxes/VotingBoxes'
 import Postulate from './Postulate/Postulate'
+import Footer from './Footer/Footer'
+import Header from './Header/Header'
 
 const HomePage = (props) => {
   const [entries, setEntries] = useState([])
@@ -33,11 +35,13 @@ const HomePage = (props) => {
 
   return (
     <div className="page">
+      <Header />
       <Hero />
       <BoxMessage />
       <Title level={2}>Votes</Title>
       <VotingBoxes entries={entries} />
       <Postulate />
+      <Footer />
     </div>
   );
 }

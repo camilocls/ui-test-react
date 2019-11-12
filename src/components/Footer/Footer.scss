@@ -1,0 +1,45 @@
+.footer {
+  background-image: linear-gradient(to right, rgba(black, 0.2) 33%, rgba(255,255,255,0) 0%);
+  background-repeat: repeat-x;
+  background-size: 6px 1px;
+  background-position: top;
+  padding: 30px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: var(--fw-light);
+
+  &__menu {
+    a {
+      color: currentColor;
+      display: inline-block;
+
+      &:not(:hover) {
+        text-decoration: none;
+      }
+    }
+
+    a + a {
+      margin-left: 26px;
+    }
+  }
+  
+  &__socialmedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-label {
+    }
+
+    &-items {
+
+    }
+
+    &-item {
+      margin-left: 24px;
+    }
+  }
+}
