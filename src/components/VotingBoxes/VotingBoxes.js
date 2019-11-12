@@ -110,7 +110,6 @@ const Hero = (props) => {
     })
     localStorage.removeItem('entries')
     localStorage.setItem('entries', JSON.stringify(updatedEntries))
-    console.log(entriesFromLocal, action)
   }
 
   useEffect(() => {
