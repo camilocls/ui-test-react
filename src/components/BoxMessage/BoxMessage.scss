@@ -1,0 +1,51 @@
+.box-message {
+  margin: 34px 0 40px;
+  padding: 24px 28px;
+  padding-right: 70px;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__headline {
+    line-height: 1;
+    flex: 1 0 190px;
+  }
+  
+  &__headline-first-line {
+    font-size: 22px;
+    font-weight: var(--fw-light);
+  }
+  
+  &__headline-second-line {
+    font-size: 37px;
+    font-weight: var(--fw-bold);
+    
+    &::first-letter {
+      margin-left: -0.05em;
+    }
+  }
+
+  &__text {
+    flex-grow: 1;
+    font-size: 15px;
+    font-weight: var(--fw-light);
+    margin-left: 16px;
+  }
+
+  &__close {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    line-height: 0;
+    background: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
