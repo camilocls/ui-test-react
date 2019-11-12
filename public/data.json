@@ -1,0 +1,62 @@
+[
+  { 
+    "id": 1,
+    "name": "Kanye West", 
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "kanye-west.jpg",
+    "date": 1555076209,
+    "category": "Entertainment",
+    "votes": {
+      "up": 100,
+      "down": 50
+    }
+  },
+  { 
+    "id": 2,
+    "name": "Mark Zuckerberg", 
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "mark-zuckerberg.jpg",
+    "date": 1570878106,
+    "category": "Business",
+    "votes": {
+      "up": 100,
+      "down": 250
+    }
+  },
+  { 
+    "id": 3,
+    "name": "Cristina Fernández de Kirchner", 
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "cristina-kirchner.jpg",
+    "date": 1570878106,
+    "category": "Politics",
+    "votes": {
+      "up": 100,
+      "down": 50
+    }
+  },
+  { 
+    "id": 4,
+    "name": "Malala Yousafzai", 
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "malala-yousafzai.jpg",
+    "date": 1570878106,
+    "category": "Entertainment",
+    "votes": {
+      "up": 100,
+      "down": 50
+    }
+  },
+  { 
+    "id": 5,
+    "name": "Jhon Doe", 
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "mark-zuckerberg.jpg",
+    "date": 1570878106,
+    "category": "Entertainment",
+    "votes": {
+      "up": 100,
+      "down": 50
+    }
+  }
+]
