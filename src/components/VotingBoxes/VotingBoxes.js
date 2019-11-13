@@ -19,7 +19,8 @@ const Entry = props => {
   }
 
   return (
-    <div style={image} className="voting-boxes__entry">
+    <div className="voting-boxes__entry">
+      <div style={image} className="voting-boxes__background" />
       <div className="voting-boxes__wrapper">
         <div className="voting-boxes__content">
           <h3 className="voting-boxes__title">

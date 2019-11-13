@@ -54,7 +54,12 @@ const Hero = (props) => {
             <div className="hero__text">
               {hero.description}
             </div>
-            <a className="hero__link" href="#wikipedia"> 
+            <a 
+              className="hero__link" 
+              href={hero.wiki_url} 
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
               <i className="hero__link-icon">
                 <img src={iconWiki} alt="Icon Wikipedia"/>
               </i> 

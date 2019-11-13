@@ -6,6 +6,7 @@
     "image": "kanye-west.jpg",
     "date": 1555076209,
     "category": "Entertainment",
+    "wiki_url": "https://en.wikipedia.org/wiki/Kanye_West",
     "votes": {
       "up": 100,
       "down": 50
@@ -18,6 +19,7 @@
     "image": "mark-zuckerberg.jpg",
     "date": 1570878106,
     "category": "Business",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
     "votes": {
       "up": 100,
       "down": 250
@@ -30,6 +32,7 @@
     "image": "cristina-kirchner.jpg",
     "date": 1570878106,
     "category": "Politics",
+    "wiki_url": "https://en.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
     "votes": {
       "up": 100,
       "down": 50
@@ -42,6 +45,7 @@
     "image": "malala-yousafzai.jpg",
     "date": 1570878106,
     "category": "Entertainment",
+    "wiki_url": "https://en.wikipedia.org/wiki/Malala_Yousafzai",
     "votes": {
       "up": 100,
       "down": 50
@@ -54,6 +58,7 @@
     "image": "mark-zuckerberg.jpg",
     "date": 1570878106,
     "category": "Entertainment",
+    "wiki_url": "https://en.wikipedia.org/wiki/John_Doe",
     "votes": {
       "up": 100,
       "down": 50

@@ -6,6 +6,7 @@
     "image": "pope.jpg",
     "date": 1555076209,
     "category": "Culture",
+    "wiki_url": "https://en.wikipedia.org/wiki/Pope_Francis",
     "days_left": 22
   },
   { 
@@ -15,6 +16,7 @@
     "image": "west.jpg",
     "date": 1555076209,
     "category": "Culture",
+    "wiki_url": "https://en.wikipedia.org/wiki/Kanye_West",
     "days_left": 50
   },
   { 
@@ -24,6 +26,7 @@
     "image": "gates.jpg",
     "date": 1555076209,
     "category": "Culture",
+    "wiki_url": "https://en.wikipedia.org/wiki/Bill_Gates",
     "days_left": 5
   }
 ]
