@@ -1,0 +1,29 @@
+[
+  { 
+    "id": 1,
+    "name": "Pope Francis", 
+    "description": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) ",
+    "image": "pope.jpg",
+    "date": 1555076209,
+    "category": "Culture",
+    "days_left": 22
+  },
+  { 
+    "id": 1,
+    "name": "Kanye West", 
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "image": "west.jpg",
+    "date": 1555076209,
+    "category": "Culture",
+    "days_left": 50
+  },
+  { 
+    "id": 1,
+    "name": "Bill Gates", 
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "image": "gates.jpg",
+    "date": 1555076209,
+    "category": "Culture",
+    "days_left": 5
+  }
+]
