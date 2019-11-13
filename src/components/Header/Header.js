@@ -19,7 +19,7 @@ const Header = (props) => {
           <nav className="header__menu">
             <Link to="/past-trials" className="header__menu-item">Past Trials</Link>
             <Link to="/how-it-works" className="header__menu-item">How It Works</Link>
-            <Link to="/login" className="header__menu-item">Log In / Sign Up</Link>
+            <a href="#login" className="header__menu-item">Log In / Sign Up</a>
           </nav>
           <SearchBar className="header__search" />
           <button onClick={() => setIsMenuMobileOpen(true)} className="header__icon-menu-mobile">
@@ -33,7 +33,7 @@ const Header = (props) => {
           <nav className="header__nav-mobile-menu">
             <Link to="/past-trials" className="header__nav-mobile-item">Past Trials</Link>
             <Link to="/how-it-works" className="header__nav-mobile-item">How It Works</Link>
-            <Link to="/login" className="header__nav-mobile-item">Log In / Sign Up</Link>
+            <a href="#login" className="header__nav-mobile-item">Log In / Sign Up</a>
           </nav>
           <button onClick={() => setIsMenuMobileOpen(false)} className="header__close">
             <img src={iconClose} alt="Close menu mobile" />
