@@ -1,11 +1,17 @@
+@import '../../scss/variables';
+
 .box-message {
   margin: 34px 0 40px;
   padding: 24px 28px;
-  padding-right: 70px;
+  padding-right: 40px;
   background-color: #ebebeb;
-  display: flex;
-  align-items: center;
   position: relative;
+  
+  @media ($min-sm) {
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+  }
 
   &__headline {
     line-height: 1;
@@ -13,14 +19,22 @@
   }
   
   &__headline-first-line {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: var(--fw-light);
+
+    @media ($min-sm) {
+      font-size: 22px;
+    }
   }
   
   &__headline-second-line {
-    font-size: 37px;
+    font-size: 30px;
     font-weight: var(--fw-bold);
     
+    @media ($min-sm) {
+      font-size: 37px;
+    }
+
     &::first-letter {
       margin-left: -0.05em;
     }
@@ -28,9 +42,18 @@
 
   &__text {
     flex-grow: 1;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: var(--fw-light);
-    margin-left: 16px;
+    margin-top: 10px;
+    
+    @media ($min-sm) {
+      font-size: 15px;
+    }
+    
+    @media ($min-sm) {
+      margin-top: 0;
+      margin-left: 16px;
+    }
   }
 
   &__close {
@@ -40,12 +63,17 @@
     line-height: 0;
     background: none;
     position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
+    top: 20px;
+    right: 20px;
 
     &:hover {
       background-color: #ccc;
+    }
+    
+    @media ($min-sm) {
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
     }
   }
 }

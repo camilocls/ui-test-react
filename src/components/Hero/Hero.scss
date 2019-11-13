@@ -1,3 +1,5 @@
+@import '../../scss/variables';
+
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,19 +9,37 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 40px;
+  padding: 100px 0 60px;
+  
+  @media ($min-md) {
+    padding: 0;
+    padding-top: 40px;
+  }
+
 
   &__wrapper-content {
-    max-width: 500px;
+    @media ($min-sm) {
+      max-width: 400px;
+    }
+
+    @media ($min-md) {
+      max-width: 500px;
+    }
   }
   
   &__content {
-    padding: 35px;
-    padding-top: 40px;
+    padding: 25px;
+    padding-top: 30px;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
     color: #fff;
     line-height: 1;
+    
+    @media ($min-md) {
+      padding: 35px;
+      padding-top: 40px;
+    }
+
 
     &::after {
       content: '';
@@ -53,9 +73,15 @@
   }
 
   &__headline {
-    font-size: 60px;
+    font-size: 36px;
     font-weight: var(--fw-regular);
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+    
+    @media ($min-md) {
+      font-size: 60px;
+      margin-bottom: 26px;
+    }
+
 
     &::first-letter {
       margin-left: -0.07em;
@@ -63,9 +89,15 @@
   }
 
   &__text {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: var(--fw-light);
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    
+    @media ($min-md) {
+      font-size: 21px;
+      margin-bottom: 24px;
+    }
+
   }
 
   &__link {
@@ -85,9 +117,15 @@
   }
 
   &__thumbs-title {
-    font-size: 20px;
-    margin-top: 42px;
+    font-size: 16px;
+    margin-top: 30px;
     font-weight: var(--fw-bold);
+    
+    @media ($min-md) {
+      margin-top: 42px;
+      font-size: 20px;
+    }
+
   }
 
   &__thumbs {
@@ -97,11 +135,22 @@
   &__thumb {
     justify-content: center;
     border: 0;
-    padding: 20px 108px;
+    padding: 16px;
     background: none;
     width: 50%;
     cursor: pointer;
     transition: background-color ease 0.2s;
+
+    @media ($min-md) {
+      padding: 20px;
+    }
+
+    &-icon {
+      @media ($max-sm) {
+        width: 20px;
+        height: 20px;
+      }
+    }
 
     &--up {
       background-color: rgba(var(--primary-color-text), 0.8);
@@ -135,14 +184,28 @@
     &-content {
       display: flex;
       align-items: center;
+      
+      @media ($max-sm) {
+        justify-content: center;
+      }
+    }
+
+    &-label, 
+    &-icon {
+      @media ($max-sm) {
+        flex: 1 0 auto;
+      }
     }
 
     &-label {
       font-size: 13px;
       color: #fff;
-      min-width: 280px;
       text-align: right;
       padding-right: 10px;
+      
+      @media ($min-sm) {
+        min-width: 280px;
+      }
     }
 
     &-count {

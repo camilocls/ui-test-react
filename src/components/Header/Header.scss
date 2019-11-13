@@ -1,3 +1,5 @@
+@import '../../scss/variables';
+
 .header {
   padding: 42px 0;
   
@@ -33,18 +35,40 @@
   }
 
   &__search {
-    margin-left: 46px;
+    @media ($max-sm) {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media ($min-sm) {
+      margin-left: 46px;
+    }
+  }
+
+  &__link-logo {
+    text-decoration: none;
   }
 
   &__logo-text {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: var(--fw-regular);
     line-height: 1;
     color: #fff;
+    margin-right: 20px;
+    
+    @media ($min-xs) {
+      font-size: 32px;
+    }
   }
 
   &__menu {
-    display: flex;
+    display: none;
+
+    @media ($min-sm) {
+      display: flex;
+    }
 
     &-item {
       color: #fff;
@@ -60,5 +84,56 @@
     &-item + &-item {
       margin-left: 30px;
     }
+  }
+
+  &__icon-menu-mobile {
+    border: 0;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+
+    @media ($min-sm) {
+      display: none;
+    }
+  }
+
+  &__nav-mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      color: #fff;
+      margin: 20px 0;
+      font-size: 26px;
+      
+      &:not(:hover) {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__close {
+    border: 0;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
   }
 }

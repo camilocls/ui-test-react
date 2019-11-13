@@ -10,3 +10,14 @@
   --fw-bold: 700;
   --fw-black: 900;
 }
+
+// Vars media queries
+$min-xs: 'min-width: 568px';
+$min-sm: 'min-width: 768px';
+$min-md: 'min-width: 992px';
+$min-lg: 'min-width: 1200px';
+
+$max-xs: 'max-width: 567px';
+$max-sm: 'max-width: 767px';
+$max-md: 'max-width: 991px';
+$max-lg: 'max-width: 1199px';

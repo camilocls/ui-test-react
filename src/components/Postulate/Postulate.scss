@@ -1,14 +1,19 @@
+@import '../../scss/variables';
+
 .postulate {
   background-color: red;
   padding: 14px 30px;
-  padding-left: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
+  @media ($min-sm) {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &::before {
     content: '';
@@ -28,19 +33,35 @@
   &__text {
     font-size: 30px;
     font-weight: var(--fw-light);
+    
+    @media ($max-sm) {
+      text-align: center;
+    }
+
+    @media ($min-sm) {
+      margin-right: 20px;
+    }
   }
 
   &__link {
     cursor: pointer;
     background: none;
     font-size: 20px;
-    padding: 14px 36px;
+    padding: 14px 20px;
     font-weight: var(--fw-regular);
     border: 3px solid currentColor;
     line-height: 1;
     color: var(--color-text);
     text-decoration: none;
     transition: background-color ease 0.2s;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    
+    @media ($min-md) {
+      margin-top: 0;
+      padding: 14px 36px;
+    }
 
     &:hover {
       background-color: rgba(black, 0.2);
