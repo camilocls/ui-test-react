@@ -79,6 +79,10 @@
       &:not(:hover) {
         text-decoration: none;
       }
+
+      &--active {
+        font-weight: var(--fw-regular);
+      }
     }
 
     &-item + &-item {
@@ -119,9 +123,14 @@
       color: #fff;
       margin: 20px 0;
       font-size: 26px;
+      font-weight: var(--fw-light);
       
       &:not(:hover) {
         text-decoration: none;
+      }
+
+      &--active {
+        font-weight: var(--fw-regular);
       }
     }
   }

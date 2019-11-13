@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import SearchBar from '../SearchBar/SearchBar'
 import iconMenu from '../../assets/icon-menu.svg'
 import iconClose from '../../assets/icon-close-white.svg'
@@ -17,8 +17,8 @@ const Header = (props) => {
         </Link>
         <div className="header__right">
           <nav className="header__menu">
-            <Link to="/past-trials" className="header__menu-item">Past Trials</Link>
-            <Link to="/how-it-works" className="header__menu-item">How It Works</Link>
+            <NavLink activeClassName="header__menu-item--active" to="/past-trials" className="header__menu-item">Past Trials</NavLink>
+            <NavLink activeClassName="header__menu-item--active" to="/how-it-works" className="header__menu-item">How It Works</NavLink>
             <a href="#login" className="header__menu-item">Log In / Sign Up</a>
           </nav>
           <SearchBar className="header__search" />
@@ -31,8 +31,8 @@ const Header = (props) => {
       {isMenuMobileOpen && (
         <div className="header__nav-mobile">
           <nav className="header__nav-mobile-menu">
-            <Link to="/past-trials" className="header__nav-mobile-item">Past Trials</Link>
-            <Link to="/how-it-works" className="header__nav-mobile-item">How It Works</Link>
+            <NavLink activeClassName="header__nav-mobile-item--active" to="/past-trials" className="header__nav-mobile-item">Past Trials</NavLink>
+            <NavLink activeClassName="header__nav-mobile-item--active" to="/how-it-works" className="header__nav-mobile-item">How It Works</NavLink>
             <a href="#login" className="header__nav-mobile-item">Log In / Sign Up</a>
           </nav>
           <button onClick={() => setIsMenuMobileOpen(false)} className="header__close">
