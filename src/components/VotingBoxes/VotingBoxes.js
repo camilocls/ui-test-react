@@ -38,7 +38,7 @@ const Entry = props => {
           <div className="voting-boxes__description">{entry.description}</div>
           <div className="voting-boxes__actions">
             {!hasVoted ? (
-              <>
+              <div style={{ display: "flex", alignItems: "center" }}>
                 <button 
                   onClick={() => setVoteAction('increment')} 
                   className={`voting-boxes__action voting-boxes__action--up ${voteAction === 'increment' ? 'voting-boxes__action--selected' : ''}`}
@@ -58,7 +58,7 @@ const Entry = props => {
                 }} className="voting-boxes__link">
                   Vote now
                 </button>
-              </>
+              </div>
             ) : (
               <button onClick={() => {
                 setVoteAction(null)
