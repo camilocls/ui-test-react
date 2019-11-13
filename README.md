@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Pending
 - Login UI
 - Some animations
+- Performance tests
 - Unit tests
 
 ## Available Scripts
