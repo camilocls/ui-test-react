@@ -6,16 +6,30 @@ import VotingBoxes from '../VotingBoxes/VotingBoxes'
 import Postulate from '../Postulate/Postulate'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import Loader from '../Loader/Loader'
 import { getHero, getEntries } from '../../helpers/data'
 
 export const HowItWorksPage = (props) => {
   const [entries, setEntries] = useState([])
   const [hero, setHero] = useState({})
+  const [loading, setLoading] = useState(false)
+
+  const getData = async () => {
+    setLoading(true)
+    await getEntries(setEntries)
+    await getHero(setHero, 1)
+    setLoading(false)
+  }
 
   useEffect(() => {
-    getEntries(setEntries)
-    getHero(setHero, 1)
+    getData()
   }, [])
+
+  if(loading) {
+    return (
+      <Loader />
+    )
+  }
 
   return (
     <div className="page">
