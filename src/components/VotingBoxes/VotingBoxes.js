@@ -84,7 +84,7 @@ const Entry = props => {
   )
 }
 
-const Hero = (props) => {
+const VotingBoxes = (props) => {
   const { entries } = props
   const [entriesFromLocal, setEntriesFromLocal] = useState([])
 
@@ -139,4 +139,4 @@ const Hero = (props) => {
   );
 }
 
-export default Hero
+export default VotingBoxes
